@@ -1,0 +1,98 @@
+@font-face {
+    src: url("Copperplate.ttf");
+    font-family: "Copperplate";
+}
+
+p {
+    margin: -3px;
+}
+
+.small {
+    font-size: .6rem;
+    letter-spacing: .1px;
+}
+
+.card-footer {
+    font-size: .8rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Copperplate", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #572D01;
+}
+
+
+body:hover {
+    background-image: url("./images/bateman.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card {
+    width: 450px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background: whitesmoke;
+    color: #2b2839;
+    box-shadow: #2b2839 0 0 20px;
+}
+
+.card:hover {
+    transition: background .3s ease;
+    background: rgba(245, 245, 245, 0.6);
+    animation: shake 0.3s;
+    animation-iteration-count: infinite; 
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header, .card-name {
+    margin-bottom: 60px;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
+/*
+Final challenge:
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
